@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8"/>
+  <head>
+    <title>电子时钟</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<script src="js/jquery-1.12.0.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<link href="http://apps.bdimg.com/libs/bootstrap/3.2.0/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+	<link href="style/style.css" rel='stylesheet' type='text/css' />
+ </head>
+  <body onload="nowTimeShow()">
+  <header>
+		<nav class="navbar navbar-default" role="navigation">
+		    <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+			        <span class="sr-only">切换导航</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
+		        <a class="navbar-brand" href="#"><span>W</span>ebWar</a>
+		   </div>
+		   <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+		        <ul class="nav navbar-nav">
+		            <li class="active"><a href="#">首页</a></li>
+		            <li class="dropdown">
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			               前端框架 <b class="caret"></b>
+			            </a>
+			            <ul class="dropdown-menu">
+			            	<li><a href="isotope.html">isotope.js</a></li>
+			                <li><a href="wow.html">wow.js</a></li>			                		                
+			            </ul>
+		            </li>
+		            <li class="dropdown">
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			             	 示例 <b class="caret"></b>
+			            </a>
+			            <ul class="dropdown-menu">
+			            	<li><a href="digitclock.html">电子时钟</a></li>
+			                <li><a href="clock.html">指针时钟</a></li>
+			                <li><a href="write.html">写字</a></li>			                		        
+			            </ul>
+		            </li>		           
+		        </ul>
+		   </div>
+		</nav>
+	</header>
+
+	<div class="digit">
+		<h3>电子时钟展示</h3>
+	 	<canvas id="digitcanvas" >您的浏浏览器不支持canvas属性，请升级您的浏览器！</canvas> 	
+	</div>
+
+	<footer>	
+		<div class="last-div">
+			<div class="container">
+				<div class="row">
+					<div class="copyright">
+						Copyright &copy; 2016.Webwar All rights reserved.</a>
+					</div>        
+					<div class="col-md-8 f-contact">
+						<a href="mailto:18770004874@163.com"><span class="glyphicon glyphicon-envelope"></span>18770004874@163.com</a>
+						<p><span class="glyphicon glyphicon-phone-alt"></span> +86 187 7000 4874</p>						
+					</div>           
+					<div class="clear"></div>
+				</div>
+			</div>
+			<a href="" class="scrollup"><span class="glyphicon glyphicon-chevron-up"></span></a>	
+		</div>
+	</footer>	 	
+	<script src="js/digit.js"></script> 
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>写字演示</title>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<link href="http://apps.bdimg.com/libs/bootstrap/3.2.0/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="style/style.css"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+</head>
+<body>
+
+	<header>
+		<nav class="navbar navbar-default" role="navigation">
+		    <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+			        <span class="sr-only">切换导航</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
+		        <a class="navbar-brand" href="#"><span>W</span>ebWar</a>
+		   </div>
+		   <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+		        <ul class="nav navbar-nav">
+		            <li class="active"><a href="#">首页</a></li>
+		            <li class="dropdown">
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			               前端框架 <b class="caret"></b>
+			            </a>
+			            <ul class="dropdown-menu">
+			            	<li><a href="isotope.html">isotope.js</a></li>
+			                <li><a href="wow.html">wow.js</a></li>			                		                
+			            </ul>
+		            </li>
+		            <li class="dropdown">
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			             	 示例 <b class="caret"></b>
+			            </a>
+			            <ul class="dropdown-menu">
+			            	<li><a href="digitclock.html">电子时钟</a></li>
+			                <li><a href="clock.html">指针时钟</a></li>
+			                <li><a href="write.html">写字</a></li>			                		        
+			            </ul>
+		            </li>		           
+		        </ul>
+		   </div>
+		</nav>
+	</header>
+
+
+	<canvas id="canvas">您的浏览器不支持canvas，请使用chrome、火狐等高级浏览器</canvas>
+	<div class="mi">
+		<div class="control">
+			<div class="color ctrl-red ctrl-selected">红</div>
+			<div class="color ctrl-yellow">黄</div>
+			<div class="color ctrl-black">黑</div>
+		</div>
+		<div class="span-choice">
+			<div id="huge-span" class="span span-select">毛笔</div>
+			<div id="small-span" class="span">铅笔</div>
+		</div>
+		<div id="reset">清除</div>
+	</div>
+	<script src="js/handwriting.js"></script>
+</body>
+</html>
